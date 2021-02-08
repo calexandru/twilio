@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "twilio-client"
+version = "0.1.0"
+description = "Testing my skills with this awesome task - this could actualy be fun"
+authors = ["Cristian Alexandru Persic <cristian.alexandru86@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Flask = "^1.1.2"
+twilio = "^6.51.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+pre-commit = "^2.10.1"
+flake8 = "^3.8.4"
+black = "^20.8b1"
+reorder-python-imports = "^2.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
