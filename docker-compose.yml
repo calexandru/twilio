@@ -1,0 +1,31 @@
+version: "3.4"
+services:
+  beanstalkd:
+    image: "schickling/beanstalkd"
+  web:
+    build:
+      context: .
+      target: twilio_web
+    depends_on:
+      - beanstalkd
+    environment:
+      APP_HOST: "0.0.0.0"
+      BEANSTALK_HOST: "beanstalkd"
+    env_file:
+      .env
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/code
+  worker:
+    build:
+      context: .
+      target: twilio_worker
+    depends_on:
+      - beanstalkd
+    environment:
+      BEANSTALK_HOST: "beanstalkd"
+    env_file:
+      .env
+    volumes:
+      - .:/code

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "twilio-client"
+name = "twilio-integration-app"
 version = "0.1.0"
 description = "Testing my skills with this awesome task - this could actualy be fun"
 authors = ["Cristian Alexandru Persic <cristian.alexandru86@gmail.com>"]
@@ -8,6 +8,7 @@ authors = ["Cristian Alexandru Persic <cristian.alexandru86@gmail.com>"]
 python = "^3.8"
 Flask = "^1.1.2"
 twilio = "^6.51.1"
+greenstalk = "^2.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.2"
@@ -19,3 +20,6 @@ reorder-python-imports = "^2.4.0"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+run = "twilio_integration_app.run:main"

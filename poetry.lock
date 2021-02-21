@@ -158,8 +158,16 @@ docs = ["sphinx", "pallets-sphinx-themes", "sphinxcontrib-log-cabinet", "sphinx-
 dotenv = ["python-dotenv"]
 
 [[package]]
+name = "greenstalk"
+version = "2.0.0"
+description = "A Python 3 client for the beanstalkd work queue"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "identify"
-version = "1.5.13"
+version = "1.5.14"
 description = "File identification library for Python"
 category = "dev"
 optional = false
@@ -421,7 +429,7 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
 name = "twilio"
-version = "6.51.1"
+version = "6.52.0"
 description = "Twilio API client and TwiML generator"
 category = "main"
 optional = false
@@ -495,7 +503,7 @@ watchdog = ["watchdog"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "66f9a83bf5ea170fee9f9a15495662ecd398ae531a297a4ea84fd9d94638f4e8"
+content-hash = "691327e0bdc93ff4b8db71da655b34e301541cb0c84c4ba6c304d3601315d5d7"
 
 [metadata.files]
 appdirs = [
@@ -557,9 +565,13 @@ flask = [
     {file = "Flask-1.1.2-py2.py3-none-any.whl", hash = "sha256:8a4fdd8936eba2512e9c85df320a37e694c93945b33ef33c89946a340a238557"},
     {file = "Flask-1.1.2.tar.gz", hash = "sha256:4efa1ae2d7c9865af48986de8aeb8504bf32c7f3d6fdc9353d34b21f4b127060"},
 ]
+greenstalk = [
+    {file = "greenstalk-2.0.0-py3-none-any.whl", hash = "sha256:ec29d83a4fa372f577d1aa8d523bf431f03a270480a3e5e123f7986de2adaa75"},
+    {file = "greenstalk-2.0.0.tar.gz", hash = "sha256:0020970abdb6f400586938573cbbec80410e83805d61e46cf76ea3ed71129257"},
+]
 identify = [
-    {file = "identify-1.5.13-py2.py3-none-any.whl", hash = "sha256:9dfb63a2e871b807e3ba62f029813552a24b5289504f5b071dea9b041aee9fe4"},
-    {file = "identify-1.5.13.tar.gz", hash = "sha256:70b638cf4743f33042bebb3b51e25261a0a10e80f978739f17e7fd4837664a66"},
+    {file = "identify-1.5.14-py2.py3-none-any.whl", hash = "sha256:e0dae57c0397629ce13c289f6ddde0204edf518f557bfdb1e56474aa143e77c3"},
+    {file = "identify-1.5.14.tar.gz", hash = "sha256:de7129142a5c86d75a52b96f394d94d96d497881d2aaf8eafe320cdbe8ac4bcc"},
 ]
 idna = [
     {file = "idna-2.10-py2.py3-none-any.whl", hash = "sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"},
@@ -751,7 +763,7 @@ toml = [
     {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
 ]
 twilio = [
-    {file = "twilio-6.51.1.tar.gz", hash = "sha256:b3357f7db6768080aa7e15aad484abc7b5153de15d9aae0c1f3436e6151b0aeb"},
+    {file = "twilio-6.52.0.tar.gz", hash = "sha256:3fbe4aa6b57f41237e3cf5b16e247ffeb1c79419137156088e377d5baf5a7bf6"},
 ]
 typed-ast = [
     {file = "typed_ast-1.4.2-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:7703620125e4fb79b64aa52427ec192822e9f45d37d4b6625ab37ef403e1df70"},
