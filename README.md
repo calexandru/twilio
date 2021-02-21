@@ -3,7 +3,7 @@
 This project aims to go over a few simple phone call flows using Twilio.
 
 This is not intended to be a fully featured application, and it has still a long way to go 
-to be production ready. ()
+to be production ready. (where are the unit tests I hear you ask!!!)
 
 After you cloned the source code on your local machine please edit **.env** file and add 
 appropriate settings.
